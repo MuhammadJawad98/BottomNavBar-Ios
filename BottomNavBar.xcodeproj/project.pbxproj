@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB0B511227C786D8002A27DF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B511127C786D8002A27DF /* Extensions.swift */; };
 		FBA4B09427BFC50D001F2FD1 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4B09327BFC50D001F2FD1 /* Tests_iOS.swift */; };
 		FBA4B09627BFC50D001F2FD1 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4B09527BFC50D001F2FD1 /* Tests_iOSLaunchTests.swift */; };
 		FBA4B0A027BFC50D001F2FD1 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4B09F27BFC50D001F2FD1 /* Tests_macOS.swift */; };
@@ -27,6 +28,7 @@
 		FBA4B0CE27BFDD4C001F2FD1 /* IconButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4B0CD27BFDD4C001F2FD1 /* IconButtons.swift */; };
 		FBA4B0D027BFDD6C001F2FD1 /* AppIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4B0CF27BFDD6C001F2FD1 /* AppIcons.swift */; };
 		FBA4B0D327BFDEC1001F2FD1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4B0D227BFDEC1001F2FD1 /* Post.swift */; };
+		FBBA007027C791D9002F1FD1 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBA006F27C791D9002F1FD1 /* ShareSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB0B511127C786D8002A27DF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FBA4B07B27BFC50C001F2FD1 /* BottomNavBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavBarApp.swift; sourceTree = "<group>"; };
 		FBA4B07C27BFC50C001F2FD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FBA4B07D27BFC50D001F2FD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 		FBA4B0CD27BFDD4C001F2FD1 /* IconButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButtons.swift; sourceTree = "<group>"; };
 		FBA4B0CF27BFDD6C001F2FD1 /* AppIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIcons.swift; sourceTree = "<group>"; };
 		FBA4B0D227BFDEC1001F2FD1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FBBA006F27C791D9002F1FD1 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB0B511027C786AC002A27DF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FB0B511127C786D8002A27DF /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		FBA4B07527BFC50C001F2FD1 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +129,7 @@
 		FBA4B07A27BFC50C001F2FD1 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				FB0B511027C786AC002A27DF /* Helpers */,
 				FBA4B0D127BFDEAB001F2FD1 /* Models */,
 				FBA4B0C627BFD801001F2FD1 /* Utils */,
 				FBA4B0C027BFCF3A001F2FD1 /* components */,
@@ -172,6 +185,7 @@
 				FBA4B0BA27BFC6D6001F2FD1 /* SearchScreen.swift */,
 				FBA4B0BC27BFC6E2001F2FD1 /* ProfileScreen.swift */,
 				FBA4B0BE27BFC6F4001F2FD1 /* SettingScreen.swift */,
+				FBBA006F27C791D9002F1FD1 /* ShareSheet.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -369,10 +383,12 @@
 				FBA4B0A327BFC50D001F2FD1 /* BottomNavBarApp.swift in Sources */,
 				FBA4B0B927BFC6A9001F2FD1 /* HomeScreen.swift in Sources */,
 				FBA4B0BB27BFC6D6001F2FD1 /* SearchScreen.swift in Sources */,
+				FB0B511227C786D8002A27DF /* Extensions.swift in Sources */,
 				FBA4B0D027BFDD6C001F2FD1 /* AppIcons.swift in Sources */,
 				FBA4B0CC27BFDD25001F2FD1 /* PostUi.swift in Sources */,
 				FBA4B0BD27BFC6E2001F2FD1 /* ProfileScreen.swift in Sources */,
 				FBA4B0C827BFD812001F2FD1 /* Constants.swift in Sources */,
+				FBBA007027C791D9002F1FD1 /* ShareSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +555,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -568,6 +586,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
